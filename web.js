@@ -8,7 +8,7 @@ app.get('/', function(request, response) {
 });
 
 var buf = new Buffer(30);
-buf = fs.readfile('/bitstarter/index.html',function (err,data){
+buf = fs.readfile('index.html',function (err,data){
   if(err) throw err;
    console.log(data);
 }); 
